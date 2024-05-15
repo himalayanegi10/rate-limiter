@@ -6,3 +6,7 @@ services:
     command: sh -c "bash startup.sh"
     volumes:
       - .:/code
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
